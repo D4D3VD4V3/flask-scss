@@ -64,7 +64,7 @@ or using ``pip``::
 Configuration
 -------------
 
-To get started all you need to do is to instanciate a Scss object after
+To get started all you need to do is to instantiate a Scss object after
 configuring the application::
 
   from flask import Flask
@@ -89,7 +89,7 @@ You will then have to generate css files yourself for other setups
 For each .scss file found in the "asset" directory, a corresponding .css file
 will be created.
 
-The class ``Scss`` can take two additionnal optionnal parameters:
+The class ``Scss`` can take two additional optional parameters:
 
 - ``asset_dir``: specifies the directory where to look for ``.scss`` files
 - ``static_dir``: specifies the directory where to put generated ``.css`` files
@@ -236,13 +236,13 @@ Changes
 ~~~~~~~~~~~~~~~~
 
 * Changes to stay compatible with pyScss 1.1.5 (James Ouyang)
-* Changes in pyScss broke support for python 2.5. it is suspended for now.
+* Changes in pyScss broke support for python 2.5. It is suspended for now.
 
 0.2 (2012/10/07)
 ~~~~~~~~~~~~~~~~
 * Main enhancements and bugfixes:
 
-  * New import scheme conforiming to Flask-0.8 ``flask.ext.*`` .
+  * New import scheme conforming to Flask-0.8 ``flask.ext.*`` .
     **The change is backward-compatible** (although deprecated!)
   * Asset tree is preserved during compilation to css
   * Asset dir is searched recursively (as it was expected!)
@@ -254,7 +254,7 @@ Changes
   * pyScss scss files search path can be configured by passing it to Scss()
     or by adding an option to the app config
   * Looks for app.debug or app.testing to decide if it must automatically
-    refresh css before each requests or not
+    refresh css before each request or not
 
 * Other internal changes:
 
